@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Website — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Aswin's Hospital</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="message">Medical Issues/Problems</label>
+        <textarea id="message" name="message" rows="5" maxlength="300" placeholder="Tell us about your project..." required></textarea>
+        <div class="row">
+          <small id="charCount" class="muted">0 / 300</small>
+        </div>
+
+        <div id="formError" class="error" role="alert" aria-live="assertive"></div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button id="resetBtn" type="button" class="btn alt">Reset</button>
+        </div>
+      </form>
+
+      <div id="thankYou" class="thank-you visually-hidden" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Website — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Aswin's Hospital</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <h1 class="animated-title">Welcome to Aswin's Hospital</h1>
+      <p class="animated-desc">"Providing compassionate, world-class healthcare for you and your loved ones."</p>
+      <div class="hero-actions">
+        <button id="quoteBtn" class="btn">Show Quote</button>
+      </div>
+      <p id="quote" class="quote visually-hidden" aria-live="polite"></p>
+    </header>
+
+<video autoplay muted loop id="bg-video">
+  <source src="Hospital.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+    <section class="features">
+      <article class="card">
+        <h3> Patient Care</h3>
+        <p>"Caring for patients is not just about healing the body, but also touching the heart."</p>
+      </article>
+      <article class="card">
+        <h3>Medical Excellence</h3>
+        <p>"Excellence in medicine is achieved when skill meets compassion."</p>
+      </article>
+      <article class="card">
+        <h3>Community Health</h3>
+        <p>"A healthy community is the foundation of a thriving future."</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
